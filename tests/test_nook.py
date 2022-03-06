@@ -17,5 +17,6 @@ class TestNook(unittest.TestCase):
     def tearDown(self):
         """Tear down test fixtures, if any."""
 
-    def test_000_something(self):
+    def test_hello_prefix_name_with_welcome(self):
         """Test something."""
+        self.assertEqual(nook.hello("nook"), 'welcome nook', 'prefix name with string hello')
